@@ -44,7 +44,6 @@ ENV PYTHONPATH=/app
 
 # Copy application source code
 COPY --chown=voiceshield:voiceshield app/ /app/app/
-COPY --chown=voiceshield:voiceshield models/ /app/models/
 
 # Ensure proper permissions
 RUN chown -R voiceshield:voiceshield /app
